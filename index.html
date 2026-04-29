@@ -10,14 +10,14 @@
       let x = nn.mouseX
       let y = nn.mouseY
       let hue = nn.random(360)
-      nn.create('div')
-        .content('😍')
+      nn.create('img')
+        .set('src', 'moneyflip.gif')
         .position(x, y)
         .scale(5)
         .rotate(hue)
         .hueRotate(hue)
         .addTo('body')
-      .css('user-select','none')
+        .css('user-select', 'none')
     }
 
   }
